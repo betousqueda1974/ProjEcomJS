@@ -24,39 +24,6 @@ main p {
   font-style: italic;
 }
 
-section {
-  /*background-color: goldenrod;
-   padding-bottom: 20px;
-  padding-left: 200; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-article{
-  border-radius: 2%;
-  border: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color:lightblue;
-}
-
-img{
-  width: 12em;
-  height: 12em;
-}
-
-.tituloarticulo{
-  text-align: center;
-  color:black;
-}
-
-.linkProd{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
 footer{
   display: flex;
   justify-content:space-evenly;
