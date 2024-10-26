@@ -2,7 +2,6 @@ header, footer{
   padding: 0.2em 0.2em;
   background-color:dodgerblue;
   color: white;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: "Roboto", serif;
   font-weight: 700;
   font-style: normal;
@@ -25,9 +24,6 @@ main p {
 }
 
 section {
-  /*background-color: goldenrod;
-   padding-bottom: 20px;
-  padding-left: 200; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -51,10 +47,23 @@ img{
   color:black;
 }
 
-.linkProd{
-  display: flex;
-  justify-content: center;
+.btn{
   margin-bottom: 10px;
+  margin-left: 70px;
+  width: 50%;
+  height: 25px;
+  background:rgb(116, 187, 253);
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+}
+
+.btn:hover {
+  background-color: #534ed5; 
+  color: white; 
 }
 
 footer{

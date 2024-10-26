@@ -2,7 +2,6 @@ header, footer{
   padding: 0.2em 0.2em;
   background-color:dodgerblue;
   color: white;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: "Roboto", serif;
   font-weight: 700;
   font-style: normal;
@@ -41,31 +40,23 @@ li a {
   align-items:self-start;
 }
 
+button{
+  margin-bottom: 5px;
+  width: 30%;
+  height: 30px;
+  background:rgb(116, 187, 253);
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+}
 
-/* @media screen and (min-width: 320px) {
-  .containerform form{
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    }
-  
-  .containerform form input,
-  .containerform form textarea{
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    border-color: dodgerblue;
-    width: 90%;
-  }
-  
-  .containerform form label{
-    align-items:self-start;
-  }
-} */
+button:hover {
+  background-color: #534ed5; 
+  color: white; 
+}
 
 @media screen and (min-width: 768px) {
   .contenedor{
