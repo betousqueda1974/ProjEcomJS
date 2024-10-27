@@ -37,6 +37,18 @@ article{
   background-color:lightblue;
 }
 
+article figure{
+  transition: transform 0.3s ease;
+}
+
+article figure:hover{
+  transform: scale(1.1); 
+}
+
+article hover figure{
+  transform: scale(1.2);
+}
+
 img{
   width: 12em;
   height: 12em;
