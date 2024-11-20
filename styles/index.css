@@ -1,86 +1,87 @@
+body{
+  background-image: url(../img/JujuyFondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
 header, footer{
-  padding: 0.2em 0.2em;
-  background-color:dodgerblue;
+  padding: 0.1em 0.1em;
   color: white;
   font-family: "Roboto", serif;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 }
 
-li {
+nav ul li {
   list-style: none;
   display: inline-block;
 }
 
-li a {
+nav ul li a {
   text-decoration: none;
   color:white;
+  margin-left: 15px;
 }
 
-main p {
-  font-family: "Roboto", serif;
-  font-weight: 400;
-  font-style: italic;
+.container{
+  perspective: 250px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 35%;
 }
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-article{
-  border-radius: 2%;
-  border: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color:lightblue;
-}
-
-article figure{
-  transition: transform 0.3s ease;
-}
-
-article figure:hover{
-  transform: scale(1.1); 
-}
-
-article hover figure{
-  transform: scale(1.2);
-}
-
-img{
-  width: 12em;
-  height: 12em;
-}
-
-.tituloarticulo{
-  text-align: center;
-  color:black;
-}
-
-.btn{
-  margin-bottom: 10px;
-  margin-left: 70px;
-  width: 50%;
-  height: 25px;
-  background:rgb(116, 187, 253);
-  border: none;
-  border-radius: 40px;
+.tarjeta{
+  width: 154px;
+  height: 242px;
+  background-color: #442222;
+  font-size: 40px;
+  position: absolute;
+  top: 50px;
+  left: 125px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 14px;
-  color: #333;
-  font-weight: 400;
+  animation: carrusel 25s linear infinite;
 }
 
-.btn:hover {
-  background-color: #534ed5; 
-  color: white; 
+@keyframes carrusel{
+  from{
+    transform: rotateY(360deg) translateZ(100px);
+    z-index: 10;
+    opacity: 0.9;
+  }
+  50%{
+    z-index: -10;
+  }
+  to{
+    transform: rotateX(0deg) translateZ(100px);
+  }
+}
+
+#invitI{
+  background-image: url(../img/InvitacionI.png);
+  background-size: cover;
+}
+
+#invitII{
+  background-image: url(../img/InvitacionII.jpg);
+  background-size: cover;
+  animation-delay: -8s;
+}
+
+#invitIII{
+  background-image: url(../img/InvitacionIII.png);
+  background-size: cover;
+  animation-delay: -16s;
 }
 
 footer{
   display: flex;
   justify-content:space-evenly;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-top: 5px; */
+  font-size: 10px;
 }

@@ -1,0 +1,76 @@
+body{
+  background-image: url(../img/JujuyFondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+header, footer{
+  padding: 0.1em 0.1em;
+  color: white;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:white;
+  margin-left: 15px;
+}
+
+p, h3{
+  color:beige;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 20fr 0.5fr;
+    align-items: start;
+    grid-template-areas:
+      "llegar ubicacion"
+      "detallehora horarioscole";
+  }
+
+  .contenedor > .comollegar{
+    grid-area: llegar;
+    position: relative;
+  }
+
+  .contenedor > iframe{
+    grid-area: ubicacion;
+    margin-bottom: 2px;
+    margin-left: 5px;
+  }
+
+  .contenedor > .descriphora{
+    grid-area: detallehora;
+    top: -40%;
+  }
+
+  .contenedor > img{
+    grid-area: horarioscole;
+    margin-top: 15px;
+    margin-left: 5px;
+  }
+
+footer{
+  display: flex;
+  justify-content:space-evenly;
+  /* padding-top: 5px; */
+  font-size: 10px;
+}
+}

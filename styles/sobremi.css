@@ -1,0 +1,87 @@
+body{
+  background-image: url(../img/JujuyFondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+header, footer{
+  padding: 0.1em 0.1em;
+  color: white;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:white;
+  margin-left: 15px;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  position: relative;
+  
+  /*margin-left: 10%;
+  margin-left: 10%;*/
+}
+
+.container
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-content: space-evenly;
+  gap: 1em 1em;
+  padding: 0.5em 0.5em;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*grid-template-rows: 30% 35% 35%;*/
+  grid-template-rows: 0.2fr 0.5fr 1fr;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color:lightsteelblue;
+  grid-template-areas: 
+    "titulo titulo"
+    "foto foto"
+    "descripcion descripcion";
+}
+
+.card > h2{
+  grid-area: titulo;
+  text-align: center;
+  margin: 0%;
+}
+
+.card > img{
+  grid-area: foto;
+  display: block;
+  margin: auto;
+}
+
+.card > p{
+  grid-area: descripcion;
+  text-align: justify;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+footer{
+  display: flex;
+  justify-content:space-evenly;
+  /* padding-top: 5px; */
+  font-size: 10px;
+}
